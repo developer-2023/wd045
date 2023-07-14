@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:checked {
+            box-shadow: 0 0 10px red;
+        }
+        input[type="checkbox"]:checked + label {
+            text-shadow: 0 0 10px red;
+        }
+        a:link {
+            color:blueviolet;
+        }
+        a:visited {
+            color: lightskyblue;
+        }
+        a:hover {
+            color: red;
+            background-color: yellow;
+        }
+        a:active {
+            color: green;
+        }
+        input[type=text]:disabled {
+            background-color: lightgrey;
+        }
+        div p:first-child {
+            color: red;
+        }
+        div p:last-child {
+            text-decoration: underline;
+        }
+        div p:nth-child(3n) {
+            font-weight: bold;
+        }
+        div p:nth-child(odd) {
+            font-style: italic;
+        }
+        p input:focus {
+            background-color: lightsalmon;
+        }
+        p:not(.info) {
+            font-size: 10px;
+        }
+        p.info:not(.box) {
+            border: 1px solid black;
+        }
+        p:not(.info):not(.intro):not(.end) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="checkbox" name="system" id="android">        
+        <label for="android">Android</label>
+        <input disabled checked type="checkbox" name="system" id="windows">
+        <label for="android">Windows</label>
+        <input type="checkbox" name="system" id="ios">
+        <label for="android">Ios</label>
+        <p>
+            <label for="login">Login: </label>
+            <input disabled type="text" name="login" id="login">
+        </p>
+        <p>
+            <label for="login">Login: </label>
+            <input type="text" name="login" id="login">
+        </p>
+    </form>
+    <ul>
+        <li><a href="https://www.apple.com">Apple</a></li>
+        <li><a href="https://www.w3.org/">W3C</a></li>
+        <li><a href="https:www.pixabay.com">Pixabay</a></li>
+        <li><a href="https:www.mozilla.org">Mozilla</a></li>
+    </ul>
+    <div>
+        <p class="intro">Lorem ipsum dolor sit amet.</p>
+        <p class="info box">Lorem ipsum dolor sit amet.</p>
+        <p class="info">Lorem ipsum dolor sit amet.</p>
+        <p class="info">Lorem ipsum dolor sit amet.</p>
+        <p class="summary">Lorem ipsum dolor sit amet.</p>
+        <p class="notes">Lorem ipsum dolor sit amet.</p>
+        <p class="end">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+</html>
